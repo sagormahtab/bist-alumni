@@ -1,38 +1,31 @@
-.App {
-  text-align: center;
+.gallery-gird .gallery-bg-1 {
+    background-image: url(./images/probable-12.jpg);
+}
+.gallery-gird .gallery-bg-2 {
+    background-image: url(./images/bist-nobin-boron-youtube.jpg);
+}
+.gallery-gird .gallery-bg-3 {
+    background-image: url(./images/probable-26.jpg);
+}
+.gallery-gird .gallery-bg-4 {
+    background-image: url(./images/probable-7.jpg);
+}
+.gallery-gird .gallery-bg-5 {
+    background-image: url(./images/probable-5.jpg);
+}
+.gallery-gird .gallery-bg-6 {
+    background-image: url(./images/probable-23.jpg);
+}
+.gallery-gird .gallery-bg-7 {
+    background-image: url(./images/bist-etv-youtube.jpg);
+}
+.gallery-gird .gallery-bg-8 {
+    background-image: url(./images/probable-9.jpg);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.blog-thumbnail{
+    background: #654ea3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
