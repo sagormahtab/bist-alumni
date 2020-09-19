@@ -1,31 +1,55 @@
 .gallery-gird .gallery-bg-1 {
-    background-image: url(./images/probable-12.jpg);
+  background-image: url(./images/probable-12.jpg);
 }
 .gallery-gird .gallery-bg-2 {
-    background-image: url(./images/bist-nobin-boron-youtube.jpg);
+  background-image: url(./images/bist-nobin-boron-youtube.jpg);
 }
 .gallery-gird .gallery-bg-3 {
-    background-image: url(./images/probable-26.jpg);
+  background-image: url(./images/probable-26.jpg);
 }
 .gallery-gird .gallery-bg-4 {
-    background-image: url(./images/probable-7.jpg);
+  background-image: url(./images/probable-7.jpg);
 }
 .gallery-gird .gallery-bg-5 {
-    background-image: url(./images/probable-5.jpg);
+  background-image: url(./images/probable-5.jpg);
 }
 .gallery-gird .gallery-bg-6 {
-    background-image: url(./images/probable-23.jpg);
+  background-image: url(./images/probable-23.jpg);
 }
 .gallery-gird .gallery-bg-7 {
-    background-image: url(./images/bist-etv-youtube.jpg);
+  background-image: url(./images/bist-etv-youtube.jpg);
 }
 .gallery-gird .gallery-bg-8 {
-    background-image: url(./images/probable-9.jpg);
+  background-image: url(./images/probable-9.jpg);
 }
 
-.blog-thumbnail{
-    background: #654ea3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #eaafc8, #654ea3);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #eaafc8, #654ea3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.blog-thumbnail {
+  background: #654ea3; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaafc8,
+    #654ea3
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.form-select .innocent-select {
+  display: block !important;
+  padding: 5px 15px !important;
+}
+
+.form-select .nice-select {
+  display: none !important;
+}
+
+#upload-photo {
+  font-size: 1.4rem;
+}
+
+.comp-text {
+  font-size: 1.4rem;
 }

@@ -1,8 +1,25 @@
 import React from "react";
-import logo from '../bist-alumni-logo.png';
+import logo from "../bist-alumni-logo.png";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const Header = () => {
+  const [homeActive, setHomeActive] = useState(true);
+  const [aboutActive, setAboutActive] = useState(false);
+  const [eventActive, setEventActive] = useState(false);
+  const [galleryActive, setGalleryActive] = useState(false);
+  const [contactActive, setContactActive] = useState(false);
+
+  const handleActive = (setThisActive) => {
+    setHomeActive(false);
+    setAboutActive(false);
+    setEventActive(false);
+    setGalleryActive(false);
+    setContactActive(false);
+
+    setThisActive(true);
+  };
+
   return (
     <header id="header-area">
       <div class="preheader-area">
@@ -21,18 +38,10 @@ const Header = () => {
 
             <div class="col-lg-6 col-sm-5 col-5 text-right">
               <div class="preheader-right">
-                <Link
-                  title="Login"
-                  class="btn-auth btn-auth-rev"
-                  to="/register"
-                >
+                <Link title="Login" class="btn-auth btn-auth-rev" to="/login">
                   Login
                 </Link>
-                <Link
-                  title="Register"
-                  class="btn-auth btn-auth"
-                  to="/register"
-                >
+                <Link title="Register" class="btn-auth btn-auth" to="/register">
                   Signup
                 </Link>
               </div>
@@ -62,25 +71,34 @@ const Header = () => {
 
                 <div class="collapse navbar-collapse" id="menucontent">
                   <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class={`nav-item ${homeActive ? "active" : ""}`}>
                       <a class="nav-link" href="/">
                         Home
                       </a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/">
+                    <li
+                      class={`nav-item ${aboutActive ? "active" : ""}`}
+                      onClick={() => handleActive(setAboutActive)}
+                    >
+                      <Link class="nav-link" to="/aboutus">
                         About
-                      </a>
+                      </Link>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/">
+                    <li
+                      class={`nav-item ${eventActive ? "active" : ""}`}
+                      onClick={() => handleActive(setEventActive)}
+                    >
+                      <Link class="nav-link" to="/event">
                         Event
-                      </a>
+                      </Link>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/">
+                    <li
+                      class={`nav-item ${galleryActive ? "active" : ""}`}
+                      onClick={() => handleActive(setGalleryActive)}
+                    >
+                      <Link class="nav-link" to="/gallery">
                         Gallery
-                      </a>
+                      </Link>
                     </li>
                     <li class="nav-item dropdown">
                       <a
@@ -89,104 +107,28 @@ const Header = () => {
                         data-toggle="dropdown"
                         role="button"
                       >
-                        Blog
+                        Lifetime-Member
                       </a>
                       <ul class="dropdown-menu">
                         <li class="nav-item">
                           <a class="nav-link" href="/">
-                            Blog List
+                            Membership Rules
                           </a>
                         </li>
                         <li class="nav-item">
                           <a class="nav-link" href="/">
-                            Single Blog Right Sidebar
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            href="/"
-                          >
-                            Single Blog left Sidebar
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a
-                            class="nav-link"
-                            href="/"
-                          >
-                            Single Blog No Sidebar
+                            Members List
                           </a>
                         </li>
                       </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                      <a
-                        class="nav-link dropdown-toggle"
-                        href="/"
-                        data-toggle="dropdown"
-                        role="button"
-                      >
-                        Pages
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <a
-                            class="nav-link dropdown-toggle"
-                            href="/"
-                            role="button"
-                          >
-                            Gallery
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li class="nav-item">
-                              <a class="nav-link" href="/">
-                                Gallery
-                              </a>
-                            </li>
-                            <li class="nav-item">
-                              <a class="nav-link" href="/">
-                                Single Album
-                              </a>
-                            </li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">
-                            Committee
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">
-                            Directory
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/register">
-                            Register
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">
-                            Career
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">
-                            Off Canvas Menu
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">
-                            Typography
-                          </a>
-                        </li>
-                      </ul>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="/">
+                    <li
+                      class={`nav-item ${contactActive ? "active" : ""}`}
+                      onClick={() => handleActive(setContactActive)}
+                    >
+                      <Link class="nav-link" to="/contact">
                         Contact
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
