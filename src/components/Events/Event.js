@@ -71,11 +71,11 @@ const Event = () => {
                       <div class="col-lg-5">
                         <div class="up-event-thumb">
                           <img
-                            src="assets/img/event/event-img-1.jpg"
+                            src="https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg"
                             class="img-fluid"
                             alt="Upcoming Event"
                           />
-                          <h4 class="up-event-date">It’s 27 February 2019</h4>
+                          <h4 class="up-event-date">It’s 04 September 2020</h4>
                         </div>
                       </div>
 
@@ -121,11 +121,11 @@ const Event = () => {
                       <div class="col-lg-5">
                         <div class="up-event-thumb">
                           <img
-                            src="assets/img/event/event-img-3.jpg"
+                            src="https://i.ibb.co/2WYcf0K/119465444-646870709298835-7769728070591038940-n.jpg"
                             class="img-fluid"
                             alt="Upcoming Event"
                           />
-                          <h4 class="up-event-date">It’s 27 February 2019</h4>
+                          <h4 class="up-event-date">It’s 04 September 2020</h4>
                         </div>
                       </div>
 
@@ -171,11 +171,11 @@ const Event = () => {
                       <div class="col-lg-5">
                         <div class="up-event-thumb">
                           <img
-                            src="assets/img/event/event-img-1.jpg"
+                            src="https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg"
                             class="img-fluid"
                             alt="Upcoming Event"
                           />
-                          <h4 class="up-event-date">It’s 27 February 2019</h4>
+                          <h4 class="up-event-date">It’s 04 September 2020</h4>
                         </div>
                       </div>
 
@@ -221,11 +221,11 @@ const Event = () => {
                       <div class="col-lg-5">
                         <div class="up-event-thumb">
                           <img
-                            src="assets/img/event/event-img-4.jpg"
+                            src="https://i.ibb.co/2WYcf0K/119465444-646870709298835-7769728070591038940-n.jpg"
                             class="img-fluid"
                             alt="Upcoming Event"
                           />
-                          <h4 class="up-event-date">It’s 27 February 2019</h4>
+                          <h4 class="up-event-date">It’s 04 September 2020</h4>
                         </div>
                       </div>
 

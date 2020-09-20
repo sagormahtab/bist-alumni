@@ -53,3 +53,16 @@
 .comp-text {
   font-size: 1.4rem;
 }
+
+.MuiTableCell-root {
+  font-size: 1.3rem !important;
+}
+.MuiMenuItem-root {
+  font-size: 1.5rem !important;
+}
+.MuiTablePagination-input {
+  font-size: 1.5rem !important;
+}
+.MuiTablePagination-select {
+  padding-left: 12px !important;
+}

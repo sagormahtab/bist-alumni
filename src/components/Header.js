@@ -9,6 +9,7 @@ const Header = () => {
   const [eventActive, setEventActive] = useState(false);
   const [galleryActive, setGalleryActive] = useState(false);
   const [contactActive, setContactActive] = useState(false);
+  const [lifeTime, setLifeTime] = useState(false);
 
   const handleActive = (setThisActive) => {
     setHomeActive(false);
@@ -115,10 +116,13 @@ const Header = () => {
                             Membership Rules
                           </a>
                         </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">
+                        <li
+                          class={`nav-item ${lifeTime ? "active" : ""}`}
+                          onClick={() => handleActive(setLifeTime)}
+                        >
+                          <Link class="nav-link" to="/life-time-members">
                             Members List
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </li>

@@ -1,5 +1,4 @@
 import React from "react";
-import FunFact from "../HomePage/FunFact";
 
 const AboutUs = () => {
   return (
@@ -32,9 +31,9 @@ const AboutUs = () => {
             <div class="row">
               <div class="col-lg-11 m-auto">
                 <div class="single-about-text">
-                  <span class="year">1834</span>
+                  <span class="year">2020</span>
                   <img
-                    src="assets/img/about-page/about-img-1.jpg"
+                    src="https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg"
                     alt="About"
                     class="img-fluid img-left"
                   />
@@ -65,9 +64,9 @@ const AboutUs = () => {
                 </div>
 
                 <div class="single-about-text">
-                  <span class="year">1920</span>
+                  <span class="year">2020</span>
                   <img
-                    src="assets/img/about-page/about-img-2.jpg"
+                    src="https://i.ibb.co/2WYcf0K/119465444-646870709298835-7769728070591038940-n.jpg"
                     alt="About"
                     class="img-fluid img-right"
                   />
@@ -98,9 +97,9 @@ const AboutUs = () => {
                 </div>
 
                 <div class="single-about-text">
-                  <span class="year">2006</span>
+                  <span class="year">2020</span>
                   <img
-                    src="assets/img/about-page/about-img-3.jpg"
+                    src="https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg"
                     alt="About"
                     class="img-fluid img-left"
                   />
@@ -134,9 +133,9 @@ const AboutUs = () => {
           </div>
         </div>
 
-        <FunFact />
+        {/* <FunFact /> */}
 
-        <div class="our-honorable-commitee section-padding">
+        {/* <div class="our-honorable-commitee section-padding">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
@@ -275,9 +274,9 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div class="people-to-say section-padding">
+        {/* <div class="people-to-say section-padding">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 text-center">
@@ -373,7 +372,7 @@ const AboutUs = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
     </div>
   );

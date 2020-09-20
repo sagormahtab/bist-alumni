@@ -10,6 +10,7 @@ import Event from "./components/Events/Event";
 import Contact from "./components/ContactUs/Contact";
 import Gallery from "./components/Gallery/Gallery";
 import Login from "./components/Login/Login";
+import LifetimeMembers from "./components/Membership/LifetimeMembers";
 
 function App() {
   return (
@@ -37,6 +38,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/life-time-members">
+            <LifetimeMembers />
           </Route>
         </Switch>
         <Footer />
