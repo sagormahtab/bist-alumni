@@ -14,12 +14,6 @@ const LifetimeMembers = () => {
                   Alumni Needs enables you to harness the power of your alumni
                   network. Whatever may be the need
                 </p>
-                <a
-                  href="#page-content-wrap"
-                  class="btn btn-brand smooth-scroll"
-                >
-                  Let's See
-                </a>
               </div>
             </div>
           </div>

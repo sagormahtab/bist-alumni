@@ -1,5 +1,5 @@
 import React from "react";
-import logo from '../images/favicon.png';
+import logo from "../images/favicon.png";
 
 const Footer = () => {
   return (
@@ -12,18 +12,16 @@ const Footer = () => {
                 <div class="single-widget-wrap">
                   <div class="widgei-body">
                     <div class="footer-about">
-                      <img
-                        src={logo}
-                        alt="Logo"
-                        class="img-fluid"
-                      />
+                      <img src={logo} alt="Logo" class="img-fluid" />
                       <p>
                         We are legend Lorem ipsum dolor sitmet, nsecte ipisicing
                         eit, sed do eiusmod tempor incidunt ut et do maga aliqua
                         enim ad minim.
-                    </p>
+                      </p>
                       <a href="tel:016710000000">Phone: +88-016710000000</a>{" "}
-                      <a href="mailto:contact@bistalumni.net">Email: contact@bistalumni.net</a>
+                      <a href="mailto:contact@bistalumni.net">
+                        Email: contact@bistalumni.net
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -36,7 +34,7 @@ const Footer = () => {
                     <p>
                       We are legend Lorem ipsum dolor sitmet, nsecte ipisicing
                       eit, sed
-                  </p>
+                    </p>
                     <div class="newsletter-form">
                       <form id="cbx-subscribe-form" role="search">
                         <input
@@ -52,16 +50,16 @@ const Footer = () => {
                     </div>
                     <div class="footer-social-icons">
                       <a href="/" target="_blank">
-                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-facebook fcb"></i>
                       </a>
                       <a href="/" target="_blank">
                         <i class="fa fa-twitter"></i>
                       </a>
                       <a href="/" target="_blank">
-                        <i class="fa fa-linkedin"></i>
+                        <i class="fa fa-pinterest"></i>
                       </a>
                       <a href="/" target="_blank">
-                        <i class="fa fa-vimeo"></i>
+                        <i class="fa fa-youtube ytb"></i>
                       </a>
                     </div>
                   </div>
@@ -141,14 +139,16 @@ const Footer = () => {
             <div class="row">
               <div class="col-lg-12 text-center">
                 <div class="footer-bottom-text">
-                  <p>© {new Date().getFullYear()} Bangladesh Institute of Science &amp; Technology Alumni Association, All Rights Reserved.</p>
+                  <p>
+                    © {new Date().getFullYear()} Bangladesh Institute of Science
+                    &amp; Technology Alumni Association, All Rights Reserved.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </footer>
-
 
       {/* <!--== Scroll Top ==--> */}
       <a href="/" class="scroll-top">

@@ -8,7 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import "./Register.css";
 import PersonalInfo from "./PersonalInfo";
 import EduQualific from "./EduQualific";
-import MastersDeg from "./MastersDeg";
+import YourPhotos from "./YourPhotos";
+import ProfessionalExperience from "./ProfessionalExperience";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -28,11 +29,18 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+const useStyles2 = makeStyles({
+  stpperRoot: {
+    padding: "24px 0",
+  },
+});
+
 function getSteps() {
   return [
     "Personal Information",
-    "Educational Qualifications",
-    "Master's Degree",
+    "Educational Information",
+    "Professional Experience",
+    "Your Photo",
   ];
 }
 
@@ -43,7 +51,9 @@ function getStepContent(step) {
     case 1:
       return <EduQualific />;
     case 2:
-      return <MastersDeg />;
+      return <ProfessionalExperience />;
+    case 3:
+      return <YourPhotos />;
     default:
       return "Unknown step";
   }
@@ -51,6 +61,7 @@ function getStepContent(step) {
 
 const Register = () => {
   const classes = useStyles();
+  const classes2 = useStyles2();
   const [activeStep, setActiveStep] = React.useState(0);
   const steps = getSteps();
 
@@ -79,12 +90,6 @@ const Register = () => {
                   Alumni Needs enables you to harness the power of your alumni
                   network. Whatever may be the need
                 </p>
-                <a
-                  href="#page-content-wrap"
-                  class="btn btn-brand smooth-scroll"
-                >
-                  Let's See
-                </a>
               </div>
             </div>
           </div>
@@ -115,6 +120,7 @@ const Register = () => {
                                   <Stepper
                                     activeStep={activeStep}
                                     alternativeLabel
+                                    classes={{ root: classes2.stpperRoot }}
                                   >
                                     {steps.map((label, index) => {
                                       const stepProps = {};
