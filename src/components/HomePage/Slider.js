@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Slider = () => {
   return (
@@ -20,12 +21,12 @@ const Slider = () => {
                     and get responses in three.
                   </p>
                   <div class="slider-btn">
-                    <a href="/aboutus" class="btn btn-brand smooth-scroll">
+                    <Link to="#about-area" class="btn btn-brand smooth-scroll">
                       our mission
-                    </a>
-                    <a href="/aboutus" class="btn btn-brand-rev">
+                    </Link>
+                    <Link to="/aboutus" class="btn btn-brand-rev">
                       our story
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

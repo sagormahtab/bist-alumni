@@ -14,10 +14,11 @@ import FirstPageIcon from "@material-ui/icons/FirstPage";
 import KeyboardArrowLeft from "@material-ui/icons/KeyboardArrowLeft";
 import KeyboardArrowRight from "@material-ui/icons/KeyboardArrowRight";
 import LastPageIcon from "@material-ui/icons/LastPage";
+import { TableFooter } from "@material-ui/core";
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
-    backgroundColor: "#3b60c9",
+    backgroundColor: "#161F37",
     color: theme.palette.common.white,
   },
   body: {
@@ -220,17 +221,21 @@ export default function StickyHeadTable() {
               );
             })}
         </TableBody>
+        <TableFooter>
+          <TableRow>
+            <TablePagination
+              rowsPerPageOptions={[10, 25, 100]}
+              colSpan={5}
+              count={rows.length}
+              rowsPerPage={rowsPerPage}
+              page={page}
+              onChangePage={handleChangePage}
+              onChangeRowsPerPage={handleChangeRowsPerPage}
+              ActionsComponent={TablePaginationActions}
+            />
+          </TableRow>
+        </TableFooter>
       </Table>
-      <TablePagination
-        rowsPerPageOptions={[10, 25, 100]}
-        component="div"
-        count={rows.length}
-        rowsPerPage={rowsPerPage}
-        page={page}
-        onChangePage={handleChangePage}
-        onChangeRowsPerPage={handleChangeRowsPerPage}
-        ActionsComponent={TablePaginationActions}
-      />
     </TableContainer>
   );
 }

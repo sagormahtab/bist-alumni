@@ -1,6 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../bist-alumni-logo.png";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 const Header = () => {
@@ -10,6 +10,7 @@ const Header = () => {
   const [galleryActive, setGalleryActive] = useState(false);
   const [contactActive, setContactActive] = useState(false);
   const [lifeTime, setLifeTime] = useState(false);
+  const location = useLocation();
 
   const handleActive = (setThisActive) => {
     setHomeActive(false);
@@ -17,17 +18,40 @@ const Header = () => {
     setEventActive(false);
     setGalleryActive(false);
     setContactActive(false);
+    setLifeTime(false);
 
-    setThisActive(true);
+    if (setThisActive !== null) {
+      setThisActive(true);
+    }
   };
+
+  useEffect(() => {
+    if (location.pathname === "/") {
+      handleActive(setHomeActive);
+    } else if (location.pathname === "/aboutus") {
+      handleActive(setAboutActive);
+    } else if (location.pathname === "/event") {
+      handleActive(setEventActive);
+    } else if (location.pathname === "/gallery") {
+      handleActive(setGalleryActive);
+    } else if (location.pathname === "/contact") {
+      handleActive(setContactActive);
+    } else if (location.pathname === "/life-time-members") {
+      handleActive(setLifeTime);
+    } else if (location.pathname === "/membership-rules") {
+      handleActive(setLifeTime);
+    } else {
+      handleActive(null);
+    }
+  }, [location]);
 
   return (
     <header id="header-area">
-      <div class="preheader-area">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-sm-7 col-7">
-              <div class="preheader-left">
+      <div className="preheader-area">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-6 col-sm-7 col-7">
+              <div className="preheader-left">
                 <a href="mailto:contact@bistalumni.net">
                   <strong>Email:</strong> contact@bistalumni.net
                 </a>
@@ -37,12 +61,20 @@ const Header = () => {
               </div>
             </div>
 
-            <div class="col-lg-6 col-sm-5 col-5 text-right">
-              <div class="preheader-right">
-                <Link title="Login" class="btn-auth btn-auth-rev" to="/login">
+            <div className="col-lg-6 col-sm-5 col-5 text-right">
+              <div className="preheader-right">
+                <Link
+                  title="Login"
+                  className="btn-auth btn-auth-rev text-white"
+                  to="/login"
+                >
                   Login
                 </Link>
-                <Link title="Register" class="btn-auth btn-auth" to="/register">
+                <Link
+                  title="Register"
+                  className="btn-auth btn-auth text-white"
+                  to="/register"
+                >
                   Signup
                 </Link>
               </div>
@@ -51,86 +83,75 @@ const Header = () => {
         </div>
       </div>
 
-      <div class="header-bottom-area" id="fixheader">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <nav class="main-menu navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="/">
+      <div className="header-bottom-area" id="fixheader">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <nav className="main-menu navbar navbar-expand-lg navbar-light">
+                <a className="navbar-brand" href="/">
                   <img src={logo} alt="Logo" />
                 </a>
                 <button
-                  class="navbar-toggler"
+                  className="navbar-toggler"
                   type="button"
                   data-toggle="collapse"
                   data-target="#menucontent"
                   aria-controls="menucontent"
                   aria-expanded="false"
                 >
-                  <span class="navbar-toggler-icon"></span>
+                  <span className="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="menucontent">
-                  <ul class="navbar-nav ml-auto">
-                    <li class={`nav-item ${homeActive ? "active" : ""}`}>
-                      <a class="nav-link" href="/">
+                <div className="collapse navbar-collapse" id="menucontent">
+                  <ul className="navbar-nav ml-auto">
+                    <li className={`nav-item ${homeActive ? "active" : ""}`}>
+                      <a className="nav-link" href="/">
                         Home
                       </a>
                     </li>
-                    <li
-                      class={`nav-item ${aboutActive ? "active" : ""}`}
-                      onClick={() => handleActive(setAboutActive)}
-                    >
-                      <Link class="nav-link" to="/aboutus">
+                    <li className={`nav-item ${aboutActive ? "active" : ""}`}>
+                      <Link className="nav-link" to="/aboutus">
                         About
                       </Link>
                     </li>
-                    <li
-                      class={`nav-item ${eventActive ? "active" : ""}`}
-                      onClick={() => handleActive(setEventActive)}
-                    >
-                      <Link class="nav-link" to="/event">
+                    <li className={`nav-item ${eventActive ? "active" : ""}`}>
+                      <Link className="nav-link" to="/event">
                         Event
                       </Link>
                     </li>
-                    <li
-                      class={`nav-item ${galleryActive ? "active" : ""}`}
-                      onClick={() => handleActive(setGalleryActive)}
-                    >
-                      <Link class="nav-link" to="/gallery">
+                    <li className={`nav-item ${galleryActive ? "active" : ""}`}>
+                      <Link className="nav-link" to="/gallery">
                         Gallery
                       </Link>
                     </li>
-                    <li class="nav-item dropdown">
+                    <li
+                      className={`nav-item dropdown ${
+                        lifeTime ? "active" : ""
+                      }`}
+                    >
                       <a
-                        class="nav-link dropdown-toggle"
+                        className="nav-link dropdown-toggle"
                         href="/"
                         data-toggle="dropdown"
                         role="button"
                       >
                         Lifetime-Member
                       </a>
-                      <ul class="dropdown-menu">
-                        <li class="nav-item">
-                          <a class="nav-link" href="/">
+                      <ul className="dropdown-menu">
+                        <li className="nav-item">
+                          <Link className="nav-link" to="/membership-rules">
                             Membership Rules
-                          </a>
+                          </Link>
                         </li>
-                        <li
-                          class={`nav-item ${lifeTime ? "active" : ""}`}
-                          onClick={() => handleActive(setLifeTime)}
-                        >
-                          <Link class="nav-link" to="/life-time-members">
+                        <li className={`nav-item`}>
+                          <Link className="nav-link" to="/life-time-members">
                             Members List
                           </Link>
                         </li>
                       </ul>
                     </li>
-                    <li
-                      class={`nav-item ${contactActive ? "active" : ""}`}
-                      onClick={() => handleActive(setContactActive)}
-                    >
-                      <Link class="nav-link" to="/contact">
+                    <li className={`nav-item ${contactActive ? "active" : ""}`}>
+                      <Link className="nav-link" to="/contact">
                         Contact
                       </Link>
                     </li>

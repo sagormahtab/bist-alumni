@@ -143,7 +143,7 @@ p {
 a,
 a:focus,
 a:hover {
-  color: #1c7437;
+  color: #559137;
 }
 strong {
   font-weight: 700;
@@ -192,7 +192,7 @@ textarea.form-control {
   box-shadow: none;
 }
 .btn-brand {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   padding: 15px 30px;
   font-weight: 800;
@@ -220,7 +220,7 @@ textarea.form-control {
 }
 .btn-auth-rev,
 .btn-auth:hover {
-  background-color: #1c7437;
+  background-color: #559137;
 }
 .btn-auth:first-child {
   margin-left: 0;
@@ -237,7 +237,7 @@ textarea.form-control {
 .nice-select:active,
 .nice-select:focus,
 .nice-select:hover {
-  border-color: #1c7437;
+  border-color: #559137;
 }
 .btn-brand-rev {
   padding: 15px 30px;
@@ -249,7 +249,7 @@ textarea.form-control {
 .btn-brand-rev:active,
 .btn-brand-rev:focus,
 .btn-brand-rev:hover {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
 }
 .btn-job {
@@ -283,7 +283,7 @@ textarea.form-control {
   width: 60px;
   height: 60px;
   background-color: #fff;
-  color: #1c7437;
+  color: #559137;
   display: block;
   font-size: 2.5rem;
   line-height: 4rem;
@@ -301,7 +301,7 @@ textarea.form-control {
   padding-left: 5px;
 }
 .btn-video-play:hover {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   transition: all 0.4s ease-out;
 }
@@ -317,7 +317,7 @@ textarea.form-control {
   color: #fff;
 }
 .btn-reg {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   display: block;
   border-radius: 0;
@@ -332,11 +332,11 @@ textarea.form-control {
 }
 ::-moz-selection {
   color: #fff;
-  background: #1c7437;
+  background: #559137;
 }
 ::selection {
   color: #fff;
-  background: #1c7437;
+  background: #559137;
 }
 .pagination-wrap {
   margin-top: 70px;
@@ -373,7 +373,7 @@ textarea.form-control {
 .nice-select .list li.selected:hover,
 .nice-select .list li:hover {
   color: #fff;
-  background-color: #1c7437;
+  background-color: #559137;
 }
 .pagination-wrap .pagination li:last-child {
   margin-right: 0;
@@ -404,7 +404,7 @@ textarea.form-control {
   -moz-border-radius: 0;
   border-radius: 0;
   border: 0;
-  background-color: #1c7437;
+  background-color: #559137;
 }
 .table-responsive::-webkit-scrollbar {
   -webkit-appearance: none;
@@ -417,7 +417,7 @@ textarea.form-control {
   -moz-border-radius: 0;
   border-radius: 0;
   border: 0;
-  background-color: #1c7437;
+  background-color: #559137;
 }
 .table-responsive::-moz-scrollbar {
   -webkit-appearance: none;
@@ -444,7 +444,7 @@ textarea.form-control {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  border-color: #1c7437;
+  border-color: #559137;
 }
 .brand-search-form form button {
   color: #b4b4b4;
@@ -600,7 +600,7 @@ blockquote:before {
   display: none;
 }
 #header-area .header-bottom-area .main-menu li.nav-item a.nav-link:before {
-  background-color: #1c7437;
+  background-color: #559137;
   content: "";
   bottom: 0;
   left: 0;
@@ -627,7 +627,7 @@ blockquote:before {
 }
 #header-area .header-bottom-area .main-menu li.nav-item:hover a.nav-link {
   background-color: #dbe5f3;
-  color: #1c7437;
+  color: #559137;
 }
 #header-area
   .header-bottom-area
@@ -749,7 +749,7 @@ blockquote:before {
 }
 #header-area .header-bottom-area .main-menu li.nav-item.active .nav-link {
   background-color: #dbe5f3;
-  color: #1c7437;
+  color: #559137;
 }
 #header-area
   .header-bottom-area
@@ -893,7 +893,7 @@ blockquote:before {
 }
 #slider-area .owl-dots .owl-dot.active span {
   border: 3px solid #fff;
-  background-color: #1c7437;
+  background-color: #559137;
   width: 30px;
   height: 30px;
 }
@@ -993,7 +993,7 @@ blockquote:before {
   z-index: 1;
 }
 #upcoming-area .upcoming-event-wrap {
-  background-color: #1c7437;
+  background-color: #559137;
   padding: 40px;
   color: #fff;
   position: relative;
@@ -1137,7 +1137,7 @@ blockquote:before {
   margin: 15px 0 10px;
 }
 #responsibility-area .single-responsibility:hover h4 {
-  color: #1c7437;
+  color: #559137;
 }
 #responsibility-area .single-responsibility p {
   margin-bottom: 0;
@@ -1223,7 +1223,7 @@ blockquote:before {
   transition: all 0.4s ease-out;
 }
 .single-job-opportunity .job-opportunity-text h3 a:hover {
-  color: #1c7437;
+  color: #559137;
 }
 .single-job-opportunity .btn-job {
   margin-top: 15px;
@@ -1261,7 +1261,7 @@ blockquote:before {
 }
 .gallery-menu span.active,
 .gallery-menu span:hover {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
 }
 .gallery-menu span:last-child {
@@ -1278,7 +1278,7 @@ blockquote:before {
 }
 .gallery-menu a.active,
 .gallery-menu a:hover {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
 }
 .gallery-menu a:last-child {
@@ -1309,7 +1309,7 @@ blockquote:before {
   min-width: 100%;
 }
 .gallery-gird .col-lg-3 .single-gallery-item .gallery-hvr-wrap {
-  background-color: #1c7437;
+  background-color: #559137;
   width: 100%;
   height: 100%;
   top: 0;
@@ -1404,7 +1404,7 @@ blockquote:before {
   color: #131c33;
 }
 #scholership-promo .scholership-promo-text h2 span {
-  color: #1c7437;
+  color: #559137;
 }
 #scholership-promo .scholership-promo-text .btn-brand {
   margin-top: 35px;
@@ -1616,11 +1616,11 @@ blockquote:before {
   form
   input:focus {
   outline: 0;
-  border-color: #1c7437;
+  border-color: #559137;
   box-shadow: none;
 }
 #footer-area .footer-widget .single-widget-wrap .newsletter-form form button {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -1724,7 +1724,7 @@ blockquote:before {
   color: #27ae60;
 }
 #footer-area .footer-bottom {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   padding: 20px 0;
 }
@@ -1797,7 +1797,7 @@ blockquote:before {
   background-color: #ecf1f5;
 }
 .gallery-page-wrap .gallery-menu {
-  border-bottom: 5px solid #1c7437;
+  border-bottom: 5px solid #559137;
 }
 .gallery-page-wrap .single-album-wraper {
   margin-bottom: 150px;
@@ -1950,7 +1950,7 @@ blockquote:before {
   line-height: 3.84rem;
   line-height: 1;
   font-weight: 700;
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   padding: 20px 10px;
   margin-bottom: 0;
@@ -1999,7 +1999,7 @@ blockquote:before {
   .single-testimonial-wrap:hover
   .people-thumb
   img {
-  border-color: #1c7437;
+  border-color: #559137;
 }
 .committee-content-wrap .committee-member-list {
   margin-top: -80px;
@@ -2019,7 +2019,7 @@ blockquote:before {
   transition: all 0.4s ease-out;
 }
 .single-committee-member h3 {
-  background-color: #1c7437;
+  background-color: #559137;
   font-size: 2.6rem;
   font-weight: 700;
   line-height: 1;
@@ -2104,7 +2104,7 @@ blockquote:before {
   transition: all 0.4s ease-out;
 }
 .single-blog-content-wrap .single-blog-meta .posting-info a:hover {
-  color: #1c7437;
+  color: #559137;
 }
 .single-blog-content-wrap .blog-details {
   line-height: 1.8;
@@ -2123,7 +2123,7 @@ blockquote:before {
   margin-bottom: 25px;
 }
 .single-blog-content-wrap .post-share {
-  background-color: #1c7437;
+  background-color: #559137;
   padding: 10px 30px;
 }
 .single-blog-content-wrap .post-share .shareonsocial {
@@ -2137,7 +2137,7 @@ blockquote:before {
   margin-right: 7px;
   text-align: center;
   line-height: 35px;
-  color: #1c7437;
+  color: #559137;
   -webkit-transition: all 0.4s ease-out;
   -moz-transition: all 0.4s ease-out;
   -o-transition: all 0.4s ease-out;
@@ -2218,15 +2218,15 @@ blockquote:before {
 .sidebar-area-wrap .single-sidebar-wrap .sidebar-body .tags .active,
 .sidebar-area-wrap .single-sidebar-wrap .sidebar-body .tags a:focus,
 .sidebar-area-wrap .single-sidebar-wrap .sidebar-body .tags a:hover {
-  background-color: #1c7437;
-  border-color: #1c7437;
+  background-color: #559137;
+  border-color: #559137;
   color: #fff;
 }
 .event-page-content-wrap {
   background-color: #ecf1f5;
 }
 .event-page-content-wrap .all-event-list .single-upcoming-event {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   padding: 30px;
   margin-top: 30px;
@@ -2279,7 +2279,7 @@ blockquote:before {
   margin-bottom: 30px;
 }
 .single-event-page-content .single-event-details .event-schedul h3 {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   font-size: 3rem;
   line-height: 4.800000000000001rem;
@@ -2329,7 +2329,7 @@ blockquote:before {
   .card-header
   h5
   .event-time {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   font-size: 1.4rem;
   line-height: 2.2399999999999998rem;
@@ -2393,7 +2393,7 @@ blockquote:before {
   .card
   .card-body
   .speaker-name {
-  color: #1c7437;
+  color: #559137;
   font-size: 1.8rem;
   line-height: 2.8800000000000003rem;
   line-height: 1;
@@ -2507,7 +2507,7 @@ blockquote:before {
   .event-thumb-item
   .event-meta
   .btn-join:hover {
-  color: #1c7437;
+  color: #559137;
 }
 .single-event-page-content .event-thumb-img-1 {
   /* background-image: url(../img/blog/blog-1.jpg); */
@@ -2518,7 +2518,7 @@ blockquote:before {
 .single-event-page-content .event-thumbnails .event-countdown {
   padding: 20px 50px;
   text-align: center;
-  background-color: #1c7437;
+  background-color: #559137;
   border: 1px solid #fff;
   border-top: none;
   position: absolute;
@@ -2545,7 +2545,7 @@ blockquote:before {
   font-size: 2rem;
   line-height: 3.2rem;
   line-height: 50px;
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
   position: absolute;
   top: 50%;
@@ -2637,7 +2637,7 @@ blockquote:before {
   color: #3a3b3c;
 }
 .directory-page-content-warp .directory-text-wrap h2 strong {
-  color: #1c7437;
+  color: #559137;
 }
 .directory-page-content-warp .directory-text-wrap .table-search-area form {
   line-height: 1;
@@ -2647,7 +2647,7 @@ blockquote:before {
   .table-search-area
   form
   input {
-  border: 1px solid #1c7437;
+  border: 1px solid #559137;
   padding: 15px 20px 16px;
   color: #3a3b3c;
 }
@@ -2708,7 +2708,7 @@ blockquote:before {
   margin-top: 8px;
 }
 .directory-page-content-warp .directory-text-wrap .show-memeber span {
-  color: #1c7437;
+  color: #559137;
 }
 .directory-page-content-warp .pagination-wrap {
   margin-top: 30px;
@@ -2717,7 +2717,7 @@ blockquote:before {
   margin-top: 50px;
 }
 .directory-table .table thead {
-  background-color: #1c7437;
+  background-color: #559137;
   color: #fff;
 }
 .directory-table .table thead th {
@@ -2770,7 +2770,7 @@ blockquote:before {
   display: block;
   text-align: center;
   background-color: #ecf1f5;
-  border: 1px solid #c0392b;
+  border: 1px solid #161f37;
   color: #6a78a1;
   padding: 12px 15px;
   margin-bottom: 15px;
@@ -2816,7 +2816,7 @@ blockquote:before {
   margin-right: 5px;
 }
 /* .register-form-content .register-form-wrap:before {
-    background-color: #1C7437;
+    background-color: #559137;
     content: "";
     width: 3px;
     height: 100%;
@@ -2865,7 +2865,7 @@ blockquote:before {
   color: #3a3b3c;
 }
 .career-page-wrapper .career-page-topbg {
-  background-color: #1c7437;
+  background-color: #559137;
   padding: 20px 0;
 }
 .career-page-wrapper .career-page-topbg img {
@@ -3447,7 +3447,7 @@ blockquote:before {
   .single-event-page-content .event-thumbnails .event-countdown {
     padding: 20px;
     text-align: center;
-    background-color: #1c7437;
+    background-color: #559137;
     border: 1px solid #fff;
     border-top: none;
     position: absolute;
@@ -4169,7 +4169,7 @@ blockquote:before {
 }
 .cbx-switcher-btn {
   font-weight: 700;
-  background: #1c7437;
+  background: #559137;
   font-size: 25px;
   color: #fff;
   position: absolute;
@@ -4204,7 +4204,7 @@ blockquote:before {
   display: block;
 }
 .cbx-list-default {
-  background: #1c7437;
+  background: #559137;
 }
 .cbx-list-red {
   background: #e74c3c;
@@ -4213,9 +4213,10 @@ blockquote:before {
   background: #2ec887;
 }
 .cbx-list-blue {
-  background: #1c7437;
+  background: #559137;
 }
 .cbx-list-olive {
+  /* background: #559M137; */
   background: #559137;
 }
 .cbx-list-violet {

@@ -1,7 +1,41 @@
 import React from "react";
+import Select from "react-select";
 import DataTable from "./DataTable";
+import { useCountUp } from "react-countup";
+
+const sessionOptions = [
+  { value: "1999-2000", label: "1999-2000" },
+  { value: "2000-2001", label: "2000-2001" },
+  { value: "2001-2002", label: "2001-2002" },
+  { value: "2002-2003", label: "2002-2003" },
+  { value: "2003-2004", label: "2003-2004" },
+  { value: "2004-2005", label: "2004-2005" },
+  { value: "2005-2006", label: "2005-2006" },
+  { value: "2006-2007", label: "2006-2007" },
+  { value: "2007-2008", label: "2007-2008" },
+  { value: "2008-2009", label: "2008-2009" },
+  { value: "2009-2010", label: "2009-2010" },
+  { value: "2010-2011", label: "2010-2011" },
+  { value: "2011-2012", label: "2011-2012" },
+  { value: "2012-2013", label: "2012-2013" },
+  { value: "2013-2014", label: "2013-2014" },
+  { value: "2014-2015", label: "2014-2015" },
+  { value: "2015-2016", label: "2015-2016" },
+  { value: "2016-2017", label: "2016-2017" },
+];
+const deptOptions = [
+  { value: "CSE", label: "CSE" },
+  { value: "BBA", label: "BBA" },
+  { value: "EEE", label: "EEE" },
+  { value: "Diploma", label: "Diploma" },
+];
 
 const LifetimeMembers = () => {
+  const { countUp } = useCountUp({
+    end: 485274,
+    duration: 1,
+    useEasing: false,
+  });
   return (
     <div>
       <section id="page-title-area">
@@ -27,45 +61,34 @@ const LifetimeMembers = () => {
               <div class="col-lg-12 text-center">
                 <div class="directory-text-wrap">
                   <h2>
-                    Now we have <strong class="funfact-count">485274</strong>{" "}
+                    Now we have{" "}
+                    <strong class="funfact-count lifetime-count-33">
+                      {countUp}
+                    </strong>{" "}
                     member{" "}
                   </h2>
                   <div class="table-search-area">
                     <form action="index.html">
-                      <select name="session" className="mr-4">
-                        <option value="" selected disabled>
-                          Session
-                        </option>
-                        <option value="2000-2001">1999-2000</option>
-                        <option value="2000-2001">2000-2001</option>
-                        <option value="2001-2002">2001-2002</option>
-                        <option value="2002-2003">2002-2003</option>
-                        <option value="2003-2004">2003-2004</option>
-                        <option value="2004-2005">2004-2005</option>
-                        <option value="2005-2006">2005-2006</option>
-                        <option value="2006-2007">2006-2007</option>
-                        <option value="2007-2008">2007-2008</option>
-                        <option value="2008-2009">2008-2009</option>
-                        <option value="2009-2010">2009-2010</option>
-                        <option value="2010-2011">2010-2011</option>
-                        <option value="2011-2012">2011-2012</option>
-                        <option value="2012-2013">2012-2013</option>
-                        <option value="2013-2014">2013-2014</option>
-                        <option value="2014-2015">2014-2015</option>
-                        <option value="2015-2016">2015-2016</option>
-                        <option value="2016-2017">2016-2017</option>
-                      </select>
+                      <div className="d-flex justify-content-center flex-wrap">
+                        <Select
+                          options={sessionOptions}
+                          placeholder="Session"
+                          isSearchable={false}
+                          className="lftm-container"
+                          classNamePrefix="lftm"
+                        />
 
-                      <select name="dept">
-                        <option value="" disabled selected>
-                          Dept
-                        </option>
-                        <option value="CSE">CSE</option>
-                        <option value="BBA">BBA</option>
-                        <option value="EEE">EEE</option>
-                        <option value="Diploma">Diploma</option>
-                      </select>
-                      <button class="btn btn-brand">Search</button>
+                        <Select
+                          options={deptOptions}
+                          placeholder="Dept"
+                          isSearchable={false}
+                          className="lftm-container"
+                          classNamePrefix="lftm"
+                        />
+                        <button class="btn mem-srch-btn btn-brand">
+                          Search
+                        </button>
+                      </div>
                     </form>
                   </div>
                 </div>

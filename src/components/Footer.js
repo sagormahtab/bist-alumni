@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import logo from "../images/favicon.png";
 
 const Footer = () => {
@@ -72,34 +73,16 @@ const Footer = () => {
                   <div class="widgei-body">
                     <ul class="double-list footer-list clearfix">
                       <li>
-                        <a href="/">Pricing Plan</a>
+                        <Link to="/aboutus">About</Link>
                       </li>
                       <li>
-                        <a href="/">Categories</a>
+                        <Link to="/event">Event</Link>
                       </li>
                       <li>
-                        <a href="/">Popular Deal</a>
+                        <Link to="/gallery">Gallery</Link>
                       </li>
                       <li>
-                        <a href="/">FAQ</a>
-                      </li>
-                      <li>
-                        <a href="/">Support</a>
-                      </li>
-                      <li>
-                        <a href="/">Pricing Plan</a>
-                      </li>
-                      <li>
-                        <a href="/">Categories</a>
-                      </li>
-                      <li>
-                        <a href="/">Populer Deal</a>
-                      </li>
-                      <li>
-                        <a href="/">FAQ</a>
-                      </li>
-                      <li>
-                        <a href="/">Support</a>
+                        <Link to="/contact">Contact</Link>
                       </li>
                     </ul>
                   </div>
@@ -112,19 +95,22 @@ const Footer = () => {
                   <div class="widgei-body">
                     <ul class="footer-list clearfix">
                       <li>
-                        <a href="/">Pricing Plan</a>
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="https://bist.ac.bd"
+                        >
+                          BIST
+                        </a>
                       </li>
                       <li>
-                        <a href="/">Categories</a>
-                      </li>
-                      <li>
-                        <a href="/">Popular Deal</a>
-                      </li>
-                      <li>
-                        <a href="/">FAQ</a>
-                      </li>
-                      <li>
-                        <a href="/">Support</a>
+                        <a
+                          rel="noopener noreferrer"
+                          target="_blank"
+                          href="http://www.nu.ac.bd/"
+                        >
+                          National University
+                        </a>
                       </li>
                     </ul>
                   </div>
@@ -149,12 +135,6 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-
-      {/* <!--== Scroll Top ==--> */}
-      <a href="/" class="scroll-top">
-        <i class="fa fa-angle-up"></i>
-      </a>
-      {/* <!--== Scroll Top ==--> */}
     </div>
   );
 };

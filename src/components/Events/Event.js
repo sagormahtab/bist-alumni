@@ -1,4 +1,41 @@
 import React from "react";
+import Select from "react-select";
+import SingleEvent from "./SingleEvent";
+
+const yearOptions = [
+  { value: "2020", label: "2020" },
+  { value: "2021", label: "2021" },
+  { value: "2022", label: "2022" },
+];
+const placeOptions = [
+  { value: "Kakrail", label: "Kakrail" },
+  { value: "Khilgaon", label: "Khilgaon" },
+  { value: "Shantinagar", label: "Shantinagar" },
+];
+const typeOptions = [
+  { value: "Meetup", label: "Meetup" },
+  { value: "Seminar", label: "Seminar" },
+  { value: "Get Together", label: "Get Together" },
+];
+
+const eventsInfo = [
+  {
+    img:
+      "https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg",
+  },
+  {
+    img:
+      "https://i.ibb.co/2WYcf0K/119465444-646870709298835-7769728070591038940-n.jpg",
+  },
+  {
+    img:
+      "https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg",
+  },
+  {
+    img:
+      "https://i.ibb.co/2WYcf0K/119465444-646870709298835-7769728070591038940-n.jpg",
+  },
+];
 
 const Event = () => {
   return (
@@ -25,31 +62,24 @@ const Event = () => {
             <div class="row">
               <div class="col-lg-12">
                 <div class="event-filter-area">
-                  <form action="index.html" class="form-inline">
-                    <select name="year" id="year">
-                      <option selected>Year</option>
-                      <option>2018</option>
-                      <option>2017</option>
-                      <option>2016</option>
-                      <option>2015</option>
-                      <option>2014</option>
-                    </select>
+                  <form class="form-inline">
+                    <Select
+                      options={yearOptions}
+                      placeholder="Year"
+                      isSearchable={false}
+                    />
 
-                    <select name="place" id="place">
-                      <option selected>Place</option>
-                      <option>Alabama</option>
-                      <option>Alaska</option>
-                      <option>Arizona</option>
-                      <option>Colorado</option>
-                      <option>Delaware</option>
-                    </select>
+                    <Select
+                      options={placeOptions}
+                      placeholder="Place"
+                      isSearchable={false}
+                    />
 
-                    <select name="type" id="type">
-                      <option selected>Type</option>
-                      <option>Meetup</option>
-                      <option>Seminar</option>
-                      <option>Get Together</option>
-                    </select>
+                    <Select
+                      options={typeOptions}
+                      placeholder="Type"
+                      isSearchable={false}
+                    />
 
                     <button class="btn btn-brand">Filter</button>
                   </form>
@@ -60,205 +90,9 @@ const Event = () => {
             <div class="row">
               <div class="col-lg-12">
                 <div class="all-event-list">
-                  <div class="single-upcoming-event">
-                    <div class="row">
-                      <div class="col-lg-5">
-                        <div class="up-event-thumb">
-                          <img
-                            src="https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg"
-                            class="img-fluid"
-                            alt="Upcoming Event"
-                          />
-                          <h4 class="up-event-date">It’s 04 September 2020</h4>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-7">
-                        <div class="display-table">
-                          <div class="display-table-cell">
-                            <div class="up-event-text">
-                              <div class="event-countdown">
-                                <div
-                                  class="event-countdown-counter"
-                                  data-date="2018/9/10"
-                                ></div>
-                                <p>Remaining</p>
-                              </div>
-                              <h3>
-                                <a href="single-event.html">
-                                  We are going to arrange a get together!
-                                </a>
-                              </h3>
-                              <p>
-                                Hello everybody Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim and minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquipv ex
-                                ea.
-                              </p>
-                              <a
-                                href="single-event.html"
-                                class="btn btn-brand btn-brand-dark"
-                              >
-                                join with us
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="single-upcoming-event">
-                    <div class="row">
-                      <div class="col-lg-5">
-                        <div class="up-event-thumb">
-                          <img
-                            src="https://i.ibb.co/2WYcf0K/119465444-646870709298835-7769728070591038940-n.jpg"
-                            class="img-fluid"
-                            alt="Upcoming Event"
-                          />
-                          <h4 class="up-event-date">It’s 04 September 2020</h4>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-7">
-                        <div class="display-table">
-                          <div class="display-table-cell">
-                            <div class="up-event-text">
-                              <div class="event-countdown">
-                                <div
-                                  class="event-countdown-counter"
-                                  data-date="2018/9/10"
-                                ></div>
-                                <p>Remaining</p>
-                              </div>
-                              <h3>
-                                <a href="single-event.html">
-                                  We are going to arrange a get together!
-                                </a>
-                              </h3>
-                              <p>
-                                Hello everybody Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim and minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquipv ex
-                                ea.
-                              </p>
-                              <a
-                                href="single-event.html"
-                                class="btn btn-brand btn-brand-dark"
-                              >
-                                join with us
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="single-upcoming-event">
-                    <div class="row">
-                      <div class="col-lg-5">
-                        <div class="up-event-thumb">
-                          <img
-                            src="https://i.ibb.co/4J50Kc3/118622494-1512414892265356-173808580789745789-n.jpg"
-                            class="img-fluid"
-                            alt="Upcoming Event"
-                          />
-                          <h4 class="up-event-date">It’s 04 September 2020</h4>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-7">
-                        <div class="display-table">
-                          <div class="display-table-cell">
-                            <div class="up-event-text">
-                              <div class="event-countdown">
-                                <div
-                                  class="event-countdown-counter"
-                                  data-date="2018/9/10"
-                                ></div>
-                                <p>Remaining</p>
-                              </div>
-                              <h3>
-                                <a href="single-event.html">
-                                  We are going to arrange a get together!
-                                </a>
-                              </h3>
-                              <p>
-                                Hello everybody Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim and minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquipv ex
-                                ea.
-                              </p>
-                              <a
-                                href="single-event.html"
-                                class="btn btn-brand btn-brand-dark"
-                              >
-                                join with us
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="single-upcoming-event">
-                    <div class="row">
-                      <div class="col-lg-5">
-                        <div class="up-event-thumb">
-                          <img
-                            src="https://i.ibb.co/2WYcf0K/119465444-646870709298835-7769728070591038940-n.jpg"
-                            class="img-fluid"
-                            alt="Upcoming Event"
-                          />
-                          <h4 class="up-event-date">It’s 04 September 2020</h4>
-                        </div>
-                      </div>
-
-                      <div class="col-lg-7">
-                        <div class="display-table">
-                          <div class="display-table-cell">
-                            <div class="up-event-text">
-                              <div class="event-countdown">
-                                <div
-                                  class="event-countdown-counter"
-                                  data-date="2018/9/10"
-                                ></div>
-                                <p>Remaining</p>
-                              </div>
-                              <h3>
-                                <a href="single-event.html">
-                                  We are going to arrange a get together!
-                                </a>
-                              </h3>
-                              <p>
-                                Hello everybody Lorem ipsum dolor sit amet,
-                                consectetur adipisicing elit, sed do eiusmod
-                                tempor incididunt ut labore et dolore magna
-                                aliqua. Ut enim and minim veniam, quis nostrud
-                                exercitation ullamco laboris nisi ut aliquipv ex
-                                ea.
-                              </p>
-                              <a
-                                href="single-event.html"
-                                class="btn btn-brand btn-brand-dark"
-                              >
-                                join with us
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  {eventsInfo.map((el, i) => (
+                    <SingleEvent img={el.img} num={i + 1} key={i} />
+                  ))}
                 </div>
               </div>
             </div>
