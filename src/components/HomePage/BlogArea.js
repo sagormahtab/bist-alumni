@@ -1,7 +1,5 @@
 import React from "react";
-import communities from '../../images/04.png';
-import falgunImg from '../../images/probable-23.jpg';
-import pujaImg from '../../images/probable-26.jpg';
+import communities from "../../images/04.png";
 
 const BlogArea = () => {
   return (
@@ -20,17 +18,16 @@ const BlogArea = () => {
             <article class="single-blog-post">
               <figure class="blog-thumb">
                 <div class="blog-thumbnail">
-                  <img
-                    src={communities}
-                    alt="Blog"
-                    class="img-fluid"
-                  />
+                  <img src={communities} alt="Blog" class="img-fluid" />
                 </div>
                 <figcaption class="blog-meta clearfix">
                   <a href="single-blog.html" class="author">
                     <div class="author-pic">
                       {/* <img src="assets/img/blog/author.jpg" alt="Author" /> */}
-                      <i class="fa fa-user-circle" style={{color: 'white', fontSize: '20px'}}></i>
+                      <i
+                        class="fa fa-user-circle"
+                        style={{ color: "white", fontSize: "20px" }}
+                      ></i>
                     </div>
                     <div class="author-info">
                       <h5>Daney williams</h5>
@@ -70,7 +67,7 @@ const BlogArea = () => {
               <figure class="blog-thumb">
                 <div class="blog-thumbnail">
                   <img
-                    src={falgunImg}
+                    src="https://i.ibb.co/2WQp9t4/probable-23.jpg"
                     alt="Blog"
                     class="img-fluid"
                   />
@@ -79,7 +76,10 @@ const BlogArea = () => {
                   <a href="single-blog.html" class="author">
                     <div class="author-pic">
                       {/* <img src="assets/img/blog/author.jpg" alt="Author" /> */}
-                      <i class="fa fa-user-circle" style={{color: 'white', fontSize: '20px'}}></i>
+                      <i
+                        class="fa fa-user-circle"
+                        style={{ color: "white", fontSize: "20px" }}
+                      ></i>
                     </div>
                     <div class="author-info">
                       <h5>Myra Hindley</h5>
@@ -119,7 +119,7 @@ const BlogArea = () => {
               <figure class="blog-thumb">
                 <div class="blog-thumbnail">
                   <img
-                    src={pujaImg}
+                    src="https://i.ibb.co/RHGCX8p/probable-26.jpg"
                     alt="Blog"
                     class="img-fluid"
                   />
@@ -128,7 +128,10 @@ const BlogArea = () => {
                   <a href="single-blog.html" class="author">
                     <div class="author-pic">
                       {/* <img src="assets/img/blog/author.jpg" alt="Author" /> */}
-                      <i class="fa fa-user-circle" style={{color: 'white', fontSize: '20px'}}></i>
+                      <i
+                        class="fa fa-user-circle"
+                        style={{ color: "white", fontSize: "20px" }}
+                      ></i>
                     </div>
                     <div class="author-info">
                       <h5>Aileen Wuornos</h5>

@@ -1,6 +1,13 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
+  const history = useHistory();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    history.push("/otp-login");
+  };
+
   return (
     <div>
       <section id="page-title-area">
@@ -35,7 +42,7 @@ const Login = () => {
                               <div class="signin-area-wrap">
                                 <h4>Already a Member?</h4>
                                 <div class="sign-form">
-                                  <form action="index.html">
+                                  <form onSubmit={handleSubmit}>
                                     <input
                                       type="text"
                                       placeholder="Enter your ID"

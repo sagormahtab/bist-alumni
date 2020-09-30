@@ -2848,7 +2848,7 @@ blockquote:before {
 }
 .form-group .form-control:focus {
   outline: 0;
-  border-color: #c0392b;
+  border-color: #e67e22;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -3002,7 +3002,7 @@ blockquote:before {
   }
   #header-area .header-bottom-area .main-menu .navbar-brand img,
   #header-area .header-bottom-area.fixed .main-menu .navbar-brand img {
-    width: 40px;
+    width: 29px;
   }
   #header-area .header-bottom-area .main-menu ul,
   #header-area .header-bottom-area.fixed .main-menu ul {
@@ -3519,7 +3519,7 @@ blockquote:before {
     padding: 10px 0;
   }
   #header-area .header-bottom-area .main-menu .navbar-brand img {
-    width: 40px;
+    width: 29px;
   }
   #header-area .header-bottom-area .main-menu ul {
     margin-top: 20px;

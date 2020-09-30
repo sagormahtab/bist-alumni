@@ -14,6 +14,7 @@ import OurGallery from "./components/Gallery/Gallery";
 import RouterScrollToTop from "./components/RouterScrollToTop";
 import NoMatch from "./components/NoMatch";
 import MembershipRules from "./components/Membership/MembershipRules";
+import OTPlogin from "./components/Login/OTPlogin";
 
 function App() {
   return (
@@ -48,6 +49,9 @@ function App() {
           </Route>
           <Route path="/membership-rules">
             <MembershipRules />
+          </Route>
+          <Route path="/otp-login">
+            <OTPlogin />
           </Route>
           <Route path="*">
             <NoMatch />

@@ -68,7 +68,7 @@ const LifetimeMembers = () => {
                     member{" "}
                   </h2>
                   <div class="table-search-area">
-                    <form action="index.html">
+                    <form>
                       <div className="d-flex justify-content-center flex-wrap">
                         <Select
                           options={sessionOptions}

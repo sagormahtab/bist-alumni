@@ -1,28 +1,3 @@
-.gallery-gird .gallery-bg-1 {
-  background-image: url(./images/probable-12.jpg);
-}
-.gallery-gird .gallery-bg-2 {
-  background-image: url(./images/bist-nobin-boron-youtube.jpg);
-}
-.gallery-gird .gallery-bg-3 {
-  background-image: url(./images/probable-26.jpg);
-}
-.gallery-gird .gallery-bg-4 {
-  background-image: url(./images/probable-7.jpg);
-}
-.gallery-gird .gallery-bg-5 {
-  background-image: url(./images/probable-5.jpg);
-}
-.gallery-gird .gallery-bg-6 {
-  background-image: url(./images/probable-23.jpg);
-}
-.gallery-gird .gallery-bg-7 {
-  background-image: url(./images/bist-etv-youtube.jpg);
-}
-.gallery-gird .gallery-bg-8 {
-  background-image: url(./images/probable-9.jpg);
-}
-
 .blog-thumbnail {
   background: #654ea3; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -123,4 +98,48 @@
 .membership-rules-page-content-warp h4 {
   color: #559137;
   margin-top: 3rem;
+}
+.btn-reg:hover {
+  color: #fff !important;
+}
+.container-style {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.btn-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+}
+.timer-area {
+  margin-top: 2rem;
+}
+.btn-row .clear-btn {
+  background: #f39c12 !important;
+}
+.timer-area .clear-btn {
+  background: lightgray;
+  color: black;
+}
+.btn-row .clear-btn:focus {
+  color: white !important;
+}
+.btn-row .btn-brand,
+.timer-area .btn-brand {
+  padding: 6px 22px !important;
+  font-size: 1.4rem !important;
+  line-height: 2.2399999999999998rem !important;
+  font-weight: 500 !important;
+  text-transform: capitalize !important;
+  margin-top: 10px !important;
+}
+.btn-row .btn-brand:hover {
+  background-color: #161f37 !important;
+  color: #fff !important;
+}
+.timer-area .clear-btn:hover {
+  background: gray;
+  color: white;
 }
